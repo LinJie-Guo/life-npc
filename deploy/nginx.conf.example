@@ -1,0 +1,22 @@
+# Install on the domestic host. Replace the domain and certificate paths.
+# The Node API and frontend are served from the same origin; no CORS wildcard.
+server {
+    listen 443 ssl;
+    server_name npc.example.com;
+    ssl_certificate /etc/nginx/certs/fullchain.pem;
+    ssl_certificate_key /etc/nginx/certs/privkey.pem;
+    client_max_body_size 6m;
+    location / {
+        proxy_pass http://127.0.0.1:8788;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_connect_timeout 5s;
+        proxy_read_timeout 30s;
+    }
+}
+server {
+    listen 80;
+    server_name npc.example.com;
+    return 301 https://$host$request_uri;
+}

@@ -1,0 +1,12 @@
+node_modules
+.git
+.env*
+.dev.vars
+.wrangler
+.next
+dist
+dist-app
+.openai
+.outputs
+outputs
+.mysql-backups

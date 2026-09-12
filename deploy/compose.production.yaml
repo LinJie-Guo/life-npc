@@ -1,0 +1,21 @@
+name: life-npc-production
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: life-npc:production
+    restart: unless-stopped
+    env_file: ../.env.server
+    environment:
+      NODE_ENV: production
+      API_HOST: 0.0.0.0
+      API_PORT: 8788
+      COOKIE_SECURE: 'true'
+    ports:
+      - '127.0.0.1:8788:8788'
+    healthcheck:
+      test: ['CMD', 'node', '-e', 'fetch("http://127.0.0.1:8788/api/health").then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))']
+      interval: 30s
+      timeout: 5s
+      retries: 3

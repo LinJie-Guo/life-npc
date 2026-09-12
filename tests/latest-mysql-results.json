@@ -1,0 +1,175 @@
+{
+  "at": "2026-09-12T04:23:06.402Z",
+  "database": "MySQL 8.4.5",
+  "passed": 42,
+  "results": [
+    {
+      "name": "Anonymous access rejected",
+      "passed": true
+    },
+    {
+      "name": "Registration creates MySQL account and HttpOnly session",
+      "passed": true
+    },
+    {
+      "name": "Duplicate account rejected",
+      "passed": true
+    },
+    {
+      "name": "Invalid login rejected",
+      "passed": true
+    },
+    {
+      "name": "Password stored as salted hash",
+      "passed": true
+    },
+    {
+      "name": "Draft is private",
+      "passed": true
+    },
+    {
+      "name": "Draft edit and publish lifecycle",
+      "passed": true
+    },
+    {
+      "name": "Publisher cannot award themselves XP",
+      "passed": true
+    },
+    {
+      "name": "Only owner may manage task",
+      "passed": true
+    },
+    {
+      "name": "Concurrent last-slot signup: exactly one winner",
+      "passed": true
+    },
+    {
+      "name": "Duplicate participation rejected",
+      "passed": true
+    },
+    {
+      "name": "Withdraw releases slot and supports rejoin",
+      "passed": true
+    },
+    {
+      "name": "Unsubmitted draft hidden from publisher",
+      "passed": true
+    },
+    {
+      "name": "Attachment bytes stored in MySQL",
+      "passed": true
+    },
+    {
+      "name": "Private draft attachment not exposed to publisher",
+      "passed": true
+    },
+    {
+      "name": "Completion validation enforced",
+      "passed": true
+    },
+    {
+      "name": "Publisher sees submitted record",
+      "passed": true
+    },
+    {
+      "name": "Other participants cannot read private submissions",
+      "passed": true
+    },
+    {
+      "name": "Cancellation blocked while submissions await review",
+      "passed": true
+    },
+    {
+      "name": "Reject and resubmit lifecycle",
+      "passed": true
+    },
+    {
+      "name": "Concurrent duplicate approvals issue reward exactly once",
+      "passed": true
+    },
+    {
+      "name": "Verified reward appears in growth profile",
+      "passed": true
+    },
+    {
+      "name": "Cancellation preserves completed achievements",
+      "passed": true
+    },
+    {
+      "name": "Multiple users participate independently",
+      "passed": true
+    },
+    {
+      "name": "Server deadline blocks both late join and late submission",
+      "passed": true
+    },
+    {
+      "name": "Deadline expires unsubmitted participation",
+      "passed": true
+    },
+    {
+      "name": "On-time submissions remain reviewable after deadline",
+      "passed": true
+    },
+    {
+      "name": "Settled task archives after the deadline",
+      "passed": true
+    },
+    {
+      "name": "Stopping recruitment does not invalidate existing participants",
+      "passed": true
+    },
+    {
+      "name": "Cross-origin mutation rejected",
+      "passed": true
+    },
+    {
+      "name": "Retained solo exploration accepts on MySQL",
+      "passed": true
+    },
+    {
+      "name": "Retained solo exploration completes on MySQL",
+      "passed": true
+    },
+    {
+      "name": "Events and favorites retained on MySQL",
+      "passed": true
+    },
+    {
+      "name": "Retained two-player matching works on MySQL",
+      "passed": true
+    },
+    {
+      "name": "Matched players share the same deadline",
+      "passed": true
+    },
+    {
+      "name": "Cancelling NPC invitation ends both unfinished runs",
+      "passed": true
+    },
+    {
+      "name": "Solo exploration deadline is enforced",
+      "passed": true
+    },
+    {
+      "name": "Expired solo task releases active slot",
+      "passed": true
+    },
+    {
+      "name": "Password recovery revokes prior sessions",
+      "passed": true
+    },
+    {
+      "name": "Recovery code single-use and rotated",
+      "passed": true
+    },
+    {
+      "name": "Logout invalidates server session",
+      "passed": true
+    },
+    {
+      "name": "Unconfigured AMap reported explicitly",
+      "passed": true
+    }
+  ]
+}
