@@ -4,7 +4,7 @@
 
 ## 界面预览与文档
 
-![桌面任务广场](docs/screenshots/desktop-square.png)
+<img src="docs/screenshots/mobile-square.png" width="390" alt="手机任务广场" />
 
 截图来自本机实际运行的应用，账号、任务和记录均为测试数据。查看 [完整截图与操作说明](docs/SCREENSHOTS.md)。
 
